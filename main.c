@@ -1,1 +1,12 @@
-uint8_t res[]={26,65,234,31,25,25,25};
+#include <stdio.h>
+#include <stdint.h>
+
+int main()
+{
+	uint16_t p = 1;
+
+	if(p >> 8) printf("BE"); 
+	else printf("LE");
+
+	return 0;
+}
